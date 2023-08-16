@@ -23,14 +23,18 @@ export function Post() {
         </time>
       </header>
       <div className={styles.content}>
-        <p>Fala galeraa 👋 Acabei de subir mais um projeto no meu portifa. </p>
-        <p>É um projeto que fiz no NLW Return, evento da Rocketseat.</p>
+        <p>Fala galeraa 👋</p>
         <p>
-          O nome do projeto é DoctorCare 🚀 👉{" "}
-          <a href="#"> jane.design/doctorcare</a>{" "}
+          Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
+          no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀
         </p>
         <p>
-          <a href="#"> #novoprojeto #nlw #rocketseat</a>
+          {" "}
+          👉 <a href="#"> jane.design/doctorcare</a>{" "}
+        </p>
+        <p>
+          <a href="#"> #novoprojeto</a> <a href="#">#nlw</a> <a href="#"></a>{" "}
+          <a href="#">#rocketseat</a>
         </p>
       </div>
     </article>
