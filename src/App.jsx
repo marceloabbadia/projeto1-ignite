@@ -5,18 +5,61 @@ import { Sidebar } from "./components/Sidebar";
 import "./global.css";
 
 function App() {
+  const posts = [
+    {
+      id: 1,
+      author: {
+        avatarUrl: "https://github.com/diego3g.png",
+        name: "Diego Fernandes",
+        role: "CTO @ Rocketseat",
+      },
+      content: [
+        { type: "paragraph", content: "Fala galeraa 👋" },
+        {
+          type: "paragraph",
+          content:
+            "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀",
+        },
+        { type: "link", content: "jane.design/doctorcare" },
+      ],
+      publishedAt: new Date("2023-08-13 14:20:00"),
+    },
+    {
+      id: 2,
+      author: {
+        avatarUrl: "https://github.com/maykbrito.png",
+        name: "Mayk Brito",
+        role: "Educador @ Rocketseat",
+      },
+      content: [
+        { type: "paragraph", content: "Fala galeraa 👋" },
+        {
+          type: "paragraph",
+          content:
+            "Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀",
+        },
+        { type: "link", content: "jane.design/doctorcare" },
+      ],
+      publishedAt: new Date("2023-08-16 20:43:30"),
+    },
+  ];
+
   return (
     <div>
       <Header />
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author="Diego Fernandes"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, non placeat laudantium optio sequi quidem perspiciatis eligendi vel. Quo, similique! Reprehenderit tempore quod nobis quibusdam quae ea, facere impedit? Consectetur."
-          />
-
-          <Post author="Gabriel Buzzi" content="Um novo post muito legal" />
+          {posts.map((post) => {
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </div>
