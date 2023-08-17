@@ -1,8 +1,6 @@
-
 <h1>Projeto1-ignite</h1>
 
 <p>Desafio 1 ignite Rocketseat completo em React e JavaScript</p>
-=======
 
 ![Captura de Tela 2023-08-16 às 22 05 06](https://github.com/marceloabbadia/projeto1-ignite/assets/112344339/877ac0a6-74db-4056-a1c8-67747371b765)
 
