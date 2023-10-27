@@ -1,4 +1,4 @@
-<h1>Projeto1-ignite</h1>
+<h1>Projeto Feed</h1>
 
 <p>Desafio 1 ignite Rocketseat completo em React e JavaScript</p>
 
